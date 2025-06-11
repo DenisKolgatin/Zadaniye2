@@ -9,7 +9,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите цену товара: ");
+        System.out.println("Введите цену товара: ");
 
         int cost = scanner.nextInt();
 
