@@ -7,19 +7,20 @@ public class Main {
 
         System.out.println("Добро пожаловать в калькулятор таможенных пошлин! ");
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите цену товара: ");
 
-        int x = sc.nextInt();
+        int cost = scanner.nextInt();
 
         System.out.print("Введите вес товара в киллограммах: ");
 
-        int y = sc.nextInt();
+        int weight = scanner.nextInt();
 
-        int tax =  CustomsService.calculateCustoms(x, y);
+        int tax =  CustomsService.calculateCustoms(cost, weight);
 
         System.out.print("Таможенная пошлина составляет: "+ tax + " рублей.");
+
 
     }
 
